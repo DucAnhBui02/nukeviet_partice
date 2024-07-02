@@ -1,0 +1,8 @@
+[Tue, 25 Jun 2024 23:03:45 +0700] [localhost] [::1] [Error(1): Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qlhocvien.nv4_vi_music_config' doesn't exist in C:\xampp\htdocs\nukeviet\vendor\vinades\nukeviet\Core\Database.php:544
+Stack trace:
+#0 C:\xampp\htdocs\nukeviet\vendor\vinades\nukeviet\Core\Database.php(544): PDO->query('SELECT config_n...', NULL)
+#1 C:\xampp\htdocs\nukeviet\vendor\vinades\nukeviet\Cache\Files.php(208): NukeViet\Core\Database->query('SELECT config_n...')
+#2 C:\xampp\htdocs\nukeviet\modules\music\admin.functions.php(39): NukeViet\Cache\Files->db('SELECT config_n...', '', 'music')
+#3 C:\xampp\htdocs\nukeviet\admin\index.php(150): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 544]

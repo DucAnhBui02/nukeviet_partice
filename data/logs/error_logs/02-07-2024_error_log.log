@@ -1,0 +1,12 @@
+[Tue, 02 Jul 2024 10:37:00 +0700] [localhost] [::1] [Error(1): Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '23134'')' at line 1 in C:\xampp\htdocs\nukeviet\vendor\vinades\nukeviet\Core\Database.php:544
+Stack trace:
+#0 C:\xampp\htdocs\nukeviet\vendor\vinades\nukeviet\Core\Database.php(544): PDO->query('INSERT INTO `nv...', NULL)
+#1 C:\xampp\htdocs\nukeviet\modules\samples\admin\main.php(28): NukeViet\Core\Database->query('INSERT INTO `nv...')
+#2 C:\xampp\htdocs\nukeviet\admin\index.php(182): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 544]
+[Tue, 02 Jul 2024 16:54:24 +0700] [localhost] [::1] [Error(1): Uncaught Error: [] operator not supported for strings in C:\xampp\htdocs\nukeviet\modules\samples\admin\main.php:40
+Stack trace:
+#0 C:\xampp\htdocs\nukeviet\admin\index.php(182): require()
+#1 {main}
+  thrown] [FILE: /modules/samples/admin/main.php] [LINE: 40]
