@@ -14,4 +14,16 @@ if (!defined('NV_ADMIN') or !defined('NV_MAINFILE') or !defined('NV_IS_MODADMIN'
 
 define('NV_IS_FILE_ADMIN', true);
 
-$allow_func = ['main', 'config'];
+$allow_func = ['main', 'config', 'list'];
+
+$arr_gender = []; 
+$arr_gender[1] = 'Nam';
+$arr_gender[2] = 'Nữ';
+$arr_gender[3] = 'N/A';
+
+$sql = "SELECT id, title FROM `nv4_vi_location_province` ORDER BY weight ASC";
+$result = $db->query($sql);
+$array_province = [];
+while ($province = $result->fetch()) {
+    $array_province[$province['id']] = $province;
+}

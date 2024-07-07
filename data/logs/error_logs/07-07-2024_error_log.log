@@ -1,0 +1,28 @@
+[Sun, 07 Jul 2024 20:50:55 +0700] [localhost] [::1] [Warning(2): Trying to access array offset on value of type bool] [FILE: /modules/samples/admin/main.php] [LINE: 105] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+
+[Sun, 07 Jul 2024 20:50:55 +0700] [localhost] [::1] [Warning(2): Trying to access array offset on value of type bool] [FILE: /modules/samples/admin/main.php] [LINE: 114] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+
+[Sun, 07 Jul 2024 20:51:29 +0700] [localhost] [::1] [Warning(2): Trying to access array offset on value of type bool] [FILE: /modules/samples/admin/main.php] [LINE: 104] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+
+[Sun, 07 Jul 2024 20:51:29 +0700] [localhost] [::1] [Warning(2): Trying to access array offset on value of type bool] [FILE: /modules/samples/admin/main.php] [LINE: 113] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+
+[Sun, 07 Jul 2024 21:33:29 +0700] [localhost] [::1] [Warning(2): Trying to access array offset on value of type bool] [FILE: /modules/samples/admin/main.php] [LINE: 106] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+
+[Sun, 07 Jul 2024 21:33:29 +0700] [localhost] [::1] [Warning(2): Trying to access array offset on value of type bool] [FILE: /modules/samples/admin/main.php] [LINE: 115] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+
+[Sun, 07 Jul 2024 21:38:23 +0700] [localhost] [::1] [Warning(2): Trying to access array offset on value of type bool] [FILE: /modules/samples/admin/main.php] [LINE: 107] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+
+[Sun, 07 Jul 2024 21:38:23 +0700] [localhost] [::1] [Warning(2): Trying to access array offset on value of type bool] [FILE: /modules/samples/admin/main.php] [LINE: 116] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+
+[Sun, 07 Jul 2024 22:01:45 +0700] [localhost] [::1] [Warning(2): preg_match(): Unknown modifier 'g'] [FILE: /modules/samples/admin/main.php] [LINE: 44] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+#2  LINE: 44    FILE: /modules/samples/admin/main.php
+
