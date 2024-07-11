@@ -1,0 +1,33 @@
+[Thu, 11 Jul 2024 10:14:33 +0700] [localhost] [::1] [Warning(2): exif_read_data(screenshot-489.png): File not supported] [FILE: /vendor/vinades/nukeviet/Files/Upload.php] [LINE: 1076] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+#2  LINE: 28    FILE: /modules/image-upload/admin/main.php
+#3  LINE: 1076  FILE: /vendor/vinades/nukeviet/Files/Upload.php
+
+[Thu, 11 Jul 2024 10:16:21 +0700] [localhost] [::1] [Warning(2): file_get_contents(C:/xampp/htdocs/nukeviet/themes/admin_default/modules/image-upload\config.tpl): Failed to open stream: No such file or directory] [FILE: /includes/xtemplate.class.php] [LINE: 1333] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+#2  LINE: 21    FILE: /modules/image-upload/admin/config.php
+#3  LINE: 395   FILE: /includes/xtemplate.class.php
+#4  LINE: 506   FILE: /includes/xtemplate.class.php
+#5  LINE: 537   FILE: /includes/xtemplate.class.php
+#6  LINE: 1365  FILE: /includes/xtemplate.class.php
+#7  LINE: 1333  FILE: /includes/xtemplate.class.php
+
+[Thu, 11 Jul 2024 11:30:23 +0700] [localhost] [::1] [Warning(2): Undefined variable $post] [FILE: /modules/image-upload/admin/main.php] [LINE: 67] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+
+[Thu, 11 Jul 2024 11:30:23 +0700] [localhost] [::1] [Warning(2): Undefined variable $post] [FILE: /modules/image-upload/admin/main.php] [LINE: 76] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+
+[Thu, 11 Jul 2024 11:31:10 +0700] [localhost] [::1] [Warning(2): Undefined array key "gender"] [FILE: /modules/image-upload/admin/main.php] [LINE: 70] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+
+[Thu, 11 Jul 2024 11:31:10 +0700] [localhost] [::1] [Warning(2): Undefined array key "provide"] [FILE: /modules/image-upload/admin/main.php] [LINE: 79] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+
+[Thu, 11 Jul 2024 15:38:02 +0700] [localhost] [::1] [Error(1): Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qlhocvien.nv4_vi_vote_image' doesn't exist in C:\xampp\htdocs\nukeviet\vendor\vinades\nukeviet\Core\Database.php:544
+Stack trace:
+#0 C:\xampp\htdocs\nukeviet\vendor\vinades\nukeviet\Core\Database.php(544): PDO->query('SELECT COUNT(*)...', NULL)
+#1 C:\xampp\htdocs\nukeviet\modules\vote-image\admin\list.php(65): NukeViet\Core\Database->query('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\nukeviet\admin\index.php(182): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 544]

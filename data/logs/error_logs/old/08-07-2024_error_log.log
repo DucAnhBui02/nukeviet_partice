@@ -1,0 +1,30 @@
+[Mon, 08 Jul 2024 08:05:20 +0700] [localhost] [::1] [Warning(2): Trying to access array offset on value of type bool] [FILE: /modules/samples/admin/main.php] [LINE: 105] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+
+[Mon, 08 Jul 2024 08:05:20 +0700] [localhost] [::1] [Warning(2): Trying to access array offset on value of type bool] [FILE: /modules/samples/admin/main.php] [LINE: 114] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+
+[Mon, 08 Jul 2024 09:32:17 +0700] [localhost] [::1] [Warning(2): Undefined array key "vote_one"] [FILE: /modules/voting/admin/content.php] [LINE: 226] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+
+[Mon, 08 Jul 2024 16:12:48 +0700] [localhost] [::1] [Warning(2): Undefined variable $base_url] [FILE: /modules/samples/admin/list.php] [LINE: 73] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+
+[Mon, 08 Jul 2024 16:12:48 +0700] [localhost] [::1] [Error(1): Uncaught TypeError: Unsupported operand types: array / int in C:\xampp\htdocs\nukeviet\includes\functions.php:1615
+Stack trace:
+#0 C:\xampp\htdocs\nukeviet\modules\samples\admin\list.php(73): nv_generate_page(NULL, Array, 5, 1)
+#1 C:\xampp\htdocs\nukeviet\admin\index.php(182): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown] [FILE: /includes/functions.php] [LINE: 1615]
+[Mon, 08 Jul 2024 16:13:26 +0700] [localhost] [::1] [Run-time notices(8192): preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated] [FILE: /includes/functions.php] [LINE: 1622] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+#2  LINE: 73    FILE: /modules/samples/admin/list.php
+#3  LINE: 1622  FILE: /includes/functions.php
+
+[Mon, 08 Jul 2024 16:19:09 +0700] [localhost] [::1] [Error(1): Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-5' at line 1 in C:\xampp\htdocs\nukeviet\vendor\vinades\nukeviet\Core\Database.php:544
+Stack trace:
+#0 C:\xampp\htdocs\nukeviet\vendor\vinades\nukeviet\Core\Database.php(544): PDO->query('SELECT * FROM n...', NULL)
+#1 C:\xampp\htdocs\nukeviet\modules\samples\admin\list.php(42): NukeViet\Core\Database->query('SELECT * FROM n...')
+#2 C:\xampp\htdocs\nukeviet\admin\index.php(182): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 544]
