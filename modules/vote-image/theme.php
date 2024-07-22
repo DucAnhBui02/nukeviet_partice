@@ -8,7 +8,7 @@
  * @Createdate Sat, 31 Oct 2020 02:20:33 GMT
  */
 
-if (!defined('NV_IS_MOD_SAMPLES')) {
+if (!defined('NV_IS_MOD_VOTE_IMAGE')) {
     die('Stop!!!');
 }
 
@@ -18,18 +18,34 @@ if (!defined('NV_IS_MOD_SAMPLES')) {
  * @param mixed $array_data
  * @return
  */
-function nv_theme_samples_main($array_data)
+function nv_theme_samples_main($array_data, $page, $perpage, $generate_page, $keyword)
 {
-    global $module_info, $lang_module, $lang_global, $op;
+    global $module_info, $lang_module, $lang_global, $op, $module_name;
 
     $xtpl = new XTemplate($op . '.tpl', NV_ROOTDIR . '/themes/' . $module_info['template'] . '/modules/' . $module_info['module_theme']);
     $xtpl->assign('LANG', $lang_module);
     $xtpl->assign('GLANG', $lang_global);
+    $xtpl->assign('NV_BASE_SITEURL', NV_BASE_SITEURL);
+    $xtpl->assign('NV_NAME_VARIABLE', NV_NAME_VARIABLE);
+    $xtpl->assign('NV_OP_VARIABLE', NV_OP_VARIABLE);
+    $xtpl->assign('MODULE_NAME', $module_name);
+    $xtpl->assign('KEYWORD', $keyword);
+    $xtpl->assign('OP', $op);
 
-    //------------------
-    // Viết code vào đây
-    //------------------
 
+    if (!empty($array_data)) {
+        $i = ($page - 1) * $perpage;
+        foreach ($array_data as $row) {
+            $row['stt'] = $i + 1;
+            $xtpl->assign('ROW', $row);
+            $xtpl->parse('main.loop');
+            $i++;
+        }
+    }
+
+    if($generate_page) {
+        $xtpl->assign('GENERATE', $generate_page);
+    }
     $xtpl->parse('main');
     return $xtpl->text('main');
 }
@@ -47,6 +63,7 @@ function nv_theme_samples_detail($array_data)
     $xtpl = new XTemplate($op . '.tpl', NV_ROOTDIR . '/themes/' . $module_info['template'] . '/modules/' . $module_info['module_theme']);
     $xtpl->assign('LANG', $lang_module);
     $xtpl->assign('GLANG', $lang_global);
+    $xtpl->assign('DATA', $array_data);
 
     //------------------
     // Viết code vào đây

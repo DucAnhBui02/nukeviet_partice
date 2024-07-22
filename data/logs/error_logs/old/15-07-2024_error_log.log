@@ -1,0 +1,103 @@
+[Mon, 15 Jul 2024 08:52:51 +0700] [localhost] [::1] [Warning(2): Undefined variable $page] [FILE: /modules/vote-image/theme.php] [LINE: 30] [TRACE:]
+#1  LINE: 369   FILE: /index.php
+#2  LINE: 39    FILE: /modules/vote-image/funcs/main.php
+
+[Mon, 15 Jul 2024 09:59:43 +0700] [localhost] [::1] [Warning(2): Undefined variable $xtpl] [FILE: /modules/vote-image/funcs/main.php] [LINE: 41] [TRACE:]
+#1  LINE: 369   FILE: /index.php
+
+[Mon, 15 Jul 2024 09:59:43 +0700] [localhost] [::1] [Error(1): Uncaught Error: Call to a member function assign() on null in C:\xampp\htdocs\nukeviet\modules\vote-image\funcs\main.php:41
+Stack trace:
+#0 C:\xampp\htdocs\nukeviet\index.php(369): require()
+#1 {main}
+  thrown] [FILE: /modules/vote-image/funcs/main.php] [LINE: 41]
+[Mon, 15 Jul 2024 10:56:56 +0700] [localhost] [::1] [Warning(2): file_get_contents(C:/xampp/htdocs/nukeviet/themes/default/modules/vote-image\detail.tpl): Failed to open stream: No such file or directory] [FILE: /includes/xtemplate.class.php] [LINE: 1333] [TRACE:]
+#1  LINE: 369   FILE: /index.php
+#2  LINE: 24    FILE: /modules/vote-image/funcs/detail.php
+#3  LINE: 57    FILE: /modules/vote-image/theme.php
+#4  LINE: 395   FILE: /includes/xtemplate.class.php
+#5  LINE: 506   FILE: /includes/xtemplate.class.php
+#6  LINE: 537   FILE: /includes/xtemplate.class.php
+#7  LINE: 1365  FILE: /includes/xtemplate.class.php
+#8  LINE: 1333  FILE: /includes/xtemplate.class.php
+
+[Mon, 15 Jul 2024 13:08:25 +0700] [localhost] [::1] [Warning(2): Undefined array key ""] [FILE: /includes/xtemplate.class.php] [LINE: 1171] [TRACE:]
+#1  LINE: 369   FILE: /index.php
+#2  LINE: 32    FILE: /modules/vote-image/funcs/detail.php
+#3  LINE: 57    FILE: /modules/vote-image/theme.php
+#4  LINE: 395   FILE: /includes/xtemplate.class.php
+#5  LINE: 506   FILE: /includes/xtemplate.class.php
+#6  LINE: 545   FILE: /includes/xtemplate.class.php
+
+[Mon, 15 Jul 2024 16:48:45 +0700] [localhost] [::1] [Warning(2): Array to string conversion] [FILE: /includes/xtemplate.class.php] [LINE: 864] [TRACE:]
+#1  LINE: 369   FILE: /index.php
+#2  LINE: 47    FILE: /modules/users/funcs/main.php
+#3  LINE: 1223  FILE: /modules/users/theme.php
+
+[Mon, 15 Jul 2024 16:54:45 +0700] [localhost] [::1] [Warning(2): Undefined array key "na"] [FILE: /modules/vote-image/funcs/detail.php] [LINE: 38] [TRACE:]
+#1  LINE: 369   FILE: /index.php
+
+[Mon, 15 Jul 2024 16:56:07 +0700] [localhost] [::1] [Error(1): Uncaught Error: Object of class NukeViet\Core\NukeVietPDOStatement could not be converted to string in C:\xampp\htdocs\nukeviet\modules\vote-image\funcs\main.php:35
+Stack trace:
+#0 C:\xampp\htdocs\nukeviet\index.php(369): require()
+#1 {main}
+  thrown] [FILE: /modules/vote-image/funcs/main.php] [LINE: 35]
+[Mon, 15 Jul 2024 16:56:51 +0700] [localhost] [::1] [Error(1): Uncaught Error: Object of class NukeViet\Core\NukeVietPDOStatement could not be converted to string in C:\xampp\htdocs\nukeviet\modules\vote-image\funcs\main.php:39
+Stack trace:
+#0 C:\xampp\htdocs\nukeviet\index.php(369): require()
+#1 {main}
+  thrown] [FILE: /modules/vote-image/funcs/main.php] [LINE: 39]
+[Mon, 15 Jul 2024 16:59:20 +0700] [localhost] [::1] [Warning(2): Array to string conversion] [FILE: /modules/vote-image/funcs/detail.php] [LINE: 19] [TRACE:]
+#1  LINE: 369   FILE: /index.php
+
+[Mon, 15 Jul 2024 16:59:42 +0700] [localhost] [::1] [Warning(2): Array to string conversion] [FILE: /modules/vote-image/funcs/detail.php] [LINE: 48] [TRACE:]
+#1  LINE: 369   FILE: /index.php
+
+[Mon, 15 Jul 2024 17:03:40 +0700] [localhost] [::1] [Warning(2): Array to string conversion] [FILE: /modules/vote-image/funcs/detail.php] [LINE: 42] [TRACE:]
+#1  LINE: 369   FILE: /index.php
+
+[Mon, 15 Jul 2024 17:04:09 +0700] [localhost] [::1] [Warning(2): Array to string conversion] [FILE: /modules/vote-image/theme.php] [LINE: 61] [TRACE:]
+#1  LINE: 369   FILE: /index.php
+#2  LINE: 43    FILE: /modules/vote-image/funcs/detail.php
+
+[Mon, 15 Jul 2024 17:12:48 +0700] [localhost] [::1] [Warning(2): Undefined variable $db] [FILE: /modules/vote-image/theme.php] [LINE: 62] [TRACE:]
+#1  LINE: 369   FILE: /index.php
+#2  LINE: 43    FILE: /modules/vote-image/funcs/detail.php
+
+[Mon, 15 Jul 2024 17:12:48 +0700] [localhost] [::1] [Error(1): Uncaught Error: Call to a member function query() on null in C:\xampp\htdocs\nukeviet\modules\vote-image\theme.php:62
+Stack trace:
+#0 C:\xampp\htdocs\nukeviet\modules\vote-image\funcs\detail.php(43): nv_theme_samples_detail(Array)
+#1 C:\xampp\htdocs\nukeviet\index.php(369): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown] [FILE: /modules/vote-image/theme.php] [LINE: 62]
+[Mon, 15 Jul 2024 17:13:32 +0700] [localhost] [::1] [Warning(2): Trying to access array offset on value of type int] [FILE: /modules/vote-image/theme.php] [LINE: 63] [TRACE:]
+#1  LINE: 369   FILE: /index.php
+#2  LINE: 43    FILE: /modules/vote-image/funcs/detail.php
+
+[Mon, 15 Jul 2024 17:13:32 +0700] [localhost] [::1] [Error(1): Uncaught Error: Cannot use a scalar value as an array in C:\xampp\htdocs\nukeviet\modules\vote-image\theme.php:63
+Stack trace:
+#0 C:\xampp\htdocs\nukeviet\modules\vote-image\funcs\detail.php(43): nv_theme_samples_detail(Array)
+#1 C:\xampp\htdocs\nukeviet\index.php(369): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown] [FILE: /modules/vote-image/theme.php] [LINE: 63]
+[Mon, 15 Jul 2024 17:17:36 +0700] [localhost] [::1] [Warning(2): Trying to access array offset on value of type int] [FILE: /modules/vote-image/funcs/detail.php] [LINE: 45] [TRACE:]
+#1  LINE: 369   FILE: /index.php
+
+[Mon, 15 Jul 2024 17:17:36 +0700] [localhost] [::1] [Error(1): Uncaught Error: Cannot use a scalar value as an array in C:\xampp\htdocs\nukeviet\modules\vote-image\funcs\detail.php:45
+Stack trace:
+#0 C:\xampp\htdocs\nukeviet\index.php(369): require()
+#1 {main}
+  thrown] [FILE: /modules/vote-image/funcs/detail.php] [LINE: 45]
+[Mon, 15 Jul 2024 17:18:55 +0700] [localhost] [::1] [Warning(2): Undefined array key "provide"] [FILE: /modules/vote-image/funcs/detail.php] [LINE: 44] [TRACE:]
+#1  LINE: 369   FILE: /index.php
+
+[Mon, 15 Jul 2024 17:19:20 +0700] [localhost] [::1] [Warning(2): Undefined array key "gender"] [FILE: /modules/vote-image/funcs/detail.php] [LINE: 39] [TRACE:]
+#1  LINE: 369   FILE: /index.php
+
+[Mon, 15 Jul 2024 17:23:41 +0700] [localhost] [::1] [Warning(2): Array to string conversion] [FILE: /modules/vote-image/functions.php] [LINE: 27] [TRACE:]
+#1  LINE: 349   FILE: /index.php
+
+[Mon, 15 Jul 2024 17:38:44 +0700] [localhost] [::1] [Warning(2): exif_read_data(screenshot-520.png): File not supported] [FILE: /vendor/vinades/nukeviet/Files/Upload.php] [LINE: 1076] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+#2  LINE: 201   FILE: /modules/banners/admin/add_banner.php
+#3  LINE: 1076  FILE: /vendor/vinades/nukeviet/Files/Upload.php
+

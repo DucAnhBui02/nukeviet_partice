@@ -6,7 +6,7 @@
 <!-- END: error -->
 <form
     action="{NV_BASE_ADMINURL}index.php?{NV_LANG_VARIABLE}={NV_LANG_DATA}&amp;{NV_NAME_VARIABLE}={MODULE_NAME}&amp;{NV_OP_VARIABLE}={OP}"
-    method="post">
+    method="post" enctype="multipart/form-data">
     <input type="hidden" name="id" value="{POST.id}" />
     <div class="form-group row">
         <div class="col-md-4">
@@ -59,9 +59,13 @@
             </select>
         </div>
     </div>
-    <div class="form-group">
-        <label><strong>File:</strong></label>
-        <input type="file" name="uploadfile">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="form-group">
+                <label>File:</label>
+                <input type="file" name="uploadfile" value="{POST.image_upload}">
+            </div>
+        </div>
     </div>
     <div class="text-center"><input class="btn btn-primary" name="submit" type="submit" value="{LANG.save}" /></div>
 </form>

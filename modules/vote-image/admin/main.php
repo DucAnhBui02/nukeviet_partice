@@ -24,6 +24,7 @@ if ($nv_Request->isset_request('submit', 'post')) {
     $post['fullname'] = $nv_Request->get_title('fullname', 'post', '');
     $post['email'] = $nv_Request->get_title('email', 'post', '');
     $post['phone'] = $nv_Request->get_title('phone', 'post', '');
+    $post['image_upload'] = $nv_Request->get_title('image_upload', 'post', 0);
     $post['gender'] = $nv_Request->get_int('gender', 'post', 0);
     $post['provide'] = $nv_Request->get_int('provide', 'post', 0);
     $post['district'] = $nv_Request->get_int('district', 'post', 0);
@@ -47,16 +48,19 @@ if ($nv_Request->isset_request('submit', 'post')) {
     if (empty($error)) {
         if ($post['id'] > 0) {
             $sql = " UPDATE " . NV_PREFIXLANG . "_samples SET 
-            fullname=:fullname,email=:email,phone=:phone,gender=:gender,provide=:provide,district=:district,updatetime=:updatetime WHERE id = " . $post['id'];
+            fullname=:fullname,email=:email,phone=:phone,gender=:gender,provide=:provide,district=:district,image_upload=:image_upload,updatetime=:updatetime WHERE id = " . $post['id'];
             $stmt = $db->prepare($sql);
             $stmt->bindValue('updatetime', 0);
         } else {
-            $sql = "INSERT INTO " . NV_PREFIXLANG . "_samples(fullname, email, phone, gender, provide, district, active, addtime, weight) 
+            $sql = "INSERT INTO " . NV_PREFIXLANG . "_samples(fullname, email, phone, gender, provide, district,image_upload, active, addtime, weight) 
             VALUES 
-            (:fullname, :email, :phone, :gender, :provide, :district, :active, :addtime, :weight)";
+            (:fullname, :email, :phone, :gender, :provide, :district,:image_upload, :active, :addtime, :weight)";
             $stmt = $db->prepare($sql);
             $stmt->bindValue('active', 1);
-            $stmt->bindValue('weight', 1);
+
+            $sql = "SELECT COUNT(*) FROM ". NV_PREFIXLANG ."_samples";
+            $weight = $db->query($sql)->fetchColumn();
+            $stmt->bindValue('weight', ($weight + 1));
             $stmt->bindValue('addtime', NV_CURRENTTIME);
         }
         $stmt->bindParam(':fullname', $post['fullname']);
@@ -65,6 +69,7 @@ if ($nv_Request->isset_request('submit', 'post')) {
         $stmt->bindParam(':gender', $post['gender']);
         $stmt->bindParam(':provide', $post['provide']);
         $stmt->bindParam(':district', $post['district']);
+        $stmt->bindParam(':image_upload', $post['image_upload']);
         $exe = $stmt->execute();
         if ($exe) {
             if ($post['id'] > 0) {
@@ -83,6 +88,7 @@ if ($nv_Request->isset_request('submit', 'post')) {
     $post['fullname'] = '';
     $post['email'] = '';
     $post['phone'] = '';
+    $post['image_upload'] = '';
     $post['gender'] = 3;
     $post['provide'] = 0;
     $post['district'] = 0;
@@ -96,12 +102,9 @@ if ($nv_Request->isset_request('submit', 'post') and isset($_FILES, $_FILES['upl
     $upload->setLanguage($lang_global);
 
     // Tải file lên server
-    $upload_info = $upload->save_file($_FILES['uploadfile'], NV_UPLOADS_REAL_DIR, false, $global_config['nv_auto_resize']);
-
-    echo '<pre><code>';
-    echo htmlspecialchars(print_r($upload_info, true));
-    die();
+    $upload_info = $upload->save_file($_FILES['uploadfile'], NV_UPLOADS_REAL_DIR . '/vote-image', false, $global_config['nv_auto_resize']);
 }
+
 
 $xtpl = new XTemplate('main.tpl', NV_ROOTDIR . '/themes/' . $global_config['module_theme'] . '/modules/' . $module_file);
 $xtpl->assign('LANG', $lang_module);

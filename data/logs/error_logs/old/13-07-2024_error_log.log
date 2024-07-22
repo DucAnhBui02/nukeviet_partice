@@ -1,0 +1,28 @@
+[Sat, 13 Jul 2024 11:16:37 +0700] [localhost] [::1] [Warning(2): file_get_contents(C:/xampp/htdocs/nukeviet/themes/default/modules/vote-image\main.tpl): Failed to open stream: No such file or directory] [FILE: /includes/xtemplate.class.php] [LINE: 1333] [TRACE:]
+#1  LINE: 369   FILE: /index.php
+#2  LINE: 24    FILE: /modules/vote-image/funcs/main.php
+#3  LINE: 25    FILE: /modules/vote-image/theme.php
+#4  LINE: 395   FILE: /includes/xtemplate.class.php
+#5  LINE: 506   FILE: /includes/xtemplate.class.php
+#6  LINE: 537   FILE: /includes/xtemplate.class.php
+#7  LINE: 1365  FILE: /includes/xtemplate.class.php
+#8  LINE: 1333  FILE: /includes/xtemplate.class.php
+
+[Sat, 13 Jul 2024 14:58:22 +0700] [localhost] [::1] [Warning(2): Undefined variable $perpage] [FILE: /modules/vote-image/funcs/main.php] [LINE: 30] [TRACE:]
+#1  LINE: 369   FILE: /index.php
+
+[Sat, 13 Jul 2024 14:58:22 +0700] [localhost] [::1] [Warning(2): Undefined variable $perpage] [FILE: /modules/vote-image/funcs/main.php] [LINE: 31] [TRACE:]
+#1  LINE: 369   FILE: /index.php
+
+[Sat, 13 Jul 2024 15:36:45 +0700] [localhost] [::1] [Error(1): Uncaught Error: Call to undefined function nv_theme_samples_main() in C:\xampp\htdocs\nukeviet\modules\vote-image\funcs\main.php:39
+Stack trace:
+#0 C:\xampp\htdocs\nukeviet\index.php(369): require()
+#1 {main}
+  thrown] [FILE: /modules/vote-image/funcs/main.php] [LINE: 39]
+[Sat, 13 Jul 2024 15:48:54 +0700] [localhost] [::1] [Warning(2): Undefined variable $page] [FILE: /modules/vote-image/theme.php] [LINE: 30] [TRACE:]
+#1  LINE: 369   FILE: /index.php
+#2  LINE: 39    FILE: /modules/vote-image/funcs/main.php
+
+[Sat, 13 Jul 2024 15:50:10 +0700] [localhost] [::1] [Warning(2): Undefined variable $array_data] [FILE: /modules/vote-image/funcs/main.php] [LINE: 39] [TRACE:]
+#1  LINE: 369   FILE: /index.php
+

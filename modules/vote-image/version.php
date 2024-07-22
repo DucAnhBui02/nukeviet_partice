@@ -22,6 +22,8 @@ $module_version = [
     'version' => '4.3.03',
     'date' => 'Sat, 31 Oct 2020 02:20:33 GMT',
     'author' => 'VINADES.,JSC (contact@vinades.vn)',
-    'uploads_dir' => [$module_name],
+    'uploads_dir' => [
+        
+    ],
     'note' => ''
 ];

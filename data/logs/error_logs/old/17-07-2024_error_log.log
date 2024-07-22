@@ -1,0 +1,5 @@
+[Wed, 17 Jul 2024 09:29:32 +0700] [localhost] [::1] [Warning(2): exif_read_data(screenshot-520.png): File not supported] [FILE: /vendor/vinades/nukeviet/Files/Upload.php] [LINE: 1076] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+#2  LINE: 73    FILE: /admin/upload/upload.php
+#3  LINE: 1076  FILE: /vendor/vinades/nukeviet/Files/Upload.php
+

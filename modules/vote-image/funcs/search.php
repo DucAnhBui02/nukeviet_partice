@@ -8,7 +8,7 @@
  * @Createdate Sat, 31 Oct 2020 02:20:33 GMT
  */
 
-if (!defined('NV_IS_MOD_SAMPLES')) {
+if (!defined('NV_IS_MOD_VOTE_IMAGE')) {
     die('Stop!!!');
 }
 

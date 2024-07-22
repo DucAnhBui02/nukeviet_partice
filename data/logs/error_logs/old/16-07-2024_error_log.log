@@ -1,0 +1,26 @@
+[Tue, 16 Jul 2024 08:49:34 +0700] [localhost] [::1] [Warning(2): exif_read_data(screenshot-542.png): File not supported] [FILE: /vendor/vinades/nukeviet/Files/Upload.php] [LINE: 1076] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+#2  LINE: 102   FILE: /modules/vote-image/admin/main.php
+#3  LINE: 1076  FILE: /vendor/vinades/nukeviet/Files/Upload.php
+
+[Tue, 16 Jul 2024 15:52:31 +0700] [localhost] [::1] [Warning(2): Undefined array key "fullname"] [FILE: /modules/vote-image/funcs/detail.php] [LINE: 35] [TRACE:]
+#1  LINE: 369   FILE: /index.php
+
+[Tue, 16 Jul 2024 15:56:49 +0700] [localhost] [::1] [Error(1): Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\nukeviet\modules\vote-image\theme.php:32
+Stack trace:
+#0 C:\xampp\htdocs\nukeviet\modules\vote-image\funcs\main.php(46): nv_theme_samples_main(Array, 1, 5, '<ul class="pagi...')
+#1 C:\xampp\htdocs\nukeviet\index.php(369): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown] [FILE: /modules/vote-image/theme.php] [LINE: 32]
+[Tue, 16 Jul 2024 16:27:12 +0700] [localhost] [::1] [Error(1): Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause' in C:\xampp\htdocs\nukeviet\vendor\vinades\nukeviet\Core\Database.php:544
+Stack trace:
+#0 C:\xampp\htdocs\nukeviet\vendor\vinades\nukeviet\Core\Database.php(544): PDO->query('SELECT COUNT(*)...', NULL)
+#1 C:\xampp\htdocs\nukeviet\modules\vote-image\search.php(20): NukeViet\Core\Database->query('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\nukeviet\modules\seek\funcs\main.php(103): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\nukeviet\index.php(369): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 544]
+[Tue, 16 Jul 2024 20:31:09 +0700] [localhost] [::1] [Warning(2): imagecreatefrompng(): gd-png: libpng warning: iCCP: known incorrect sRGB profile] [FILE: /includes/core/statimg.php] [LINE: 27] [TRACE:]
+#1  LINE: 102   FILE: /index.php
+#2  LINE: 27    FILE: /includes/core/statimg.php
+

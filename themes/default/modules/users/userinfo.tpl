@@ -5,29 +5,31 @@
         <div class="row">
             <figure onclick="changeAvatar('{URL_AVATAR}');" class="avatar left pointer">
                 <div style="width:80px;">
-                    <p class="text-center"><img src="{IMG.src}" alt="{USER.username}" title="{USER.username}" width="80" class="img-thumbnail bg-gainsboro m-bottom"/></p>
+                    <p class="text-center"><img src="{IMG.src}" alt="{USER.username}" title="{USER.username}" width="80"
+                            class="img-thumbnail bg-gainsboro m-bottom" /></p>
                     <figcaption>{IMG.title}</figcaption>
                 </div>
             </figure>
             <!-- BEGIN: crossdomain_listener -->
             <script type="text/javascript">
-            function SSOReciver(event) {
-                if (event.origin !== '{SSO_REGISTER_ORIGIN}') {
-                    return false;
+                function SSOReciver(event) {
+                    if (event.origin !== '{SSO_REGISTER_ORIGIN}') {
+                        return false;
+                    }
+                    location.reload();
                 }
-                location.reload();
-            }
-            window.addEventListener("message", SSOReciver, false);
+                window.addEventListener("message", SSOReciver, false);
             </script>
             <!-- END: crossdomain_listener -->
-        	<div>
-        		<ul class="nv-list-item xsm">
-        			<li><em class="fa fa-angle-right">&nbsp;</em> {LANG.account2}: <strong>{USER.username}</strong> ({USER.email})</li>
-        			<li><em class="fa fa-angle-right">&nbsp;</em> {USER.current_mode}</li>
-        			<li><em class="fa fa-angle-right">&nbsp;</em> {LANG.current_login}: {USER.current_login}</li>
-        			<li><em class="fa fa-angle-right">&nbsp;</em> {LANG.ip}: {USER.current_ip}</li>
-        		</ul>
-        	</div>
+            <div>
+                <ul class="nv-list-item xsm">
+                    <li><em class="fa fa-angle-right">&nbsp;</em> {LANG.account2}: <strong>{USER.username}</strong>
+                        ({USER.email})</li>
+                    <li><em class="fa fa-angle-right">&nbsp;</em> {USER.current_mode}</li>
+                    <li><em class="fa fa-angle-right">&nbsp;</em> {LANG.current_login}: {USER.current_login}</li>
+                    <li><em class="fa fa-angle-right">&nbsp;</em> {LANG.ip}: {USER.current_ip}</li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -50,8 +52,8 @@
 <div class="table-responsive margin-bottom-lg">
     <table class="table table-bordered table-striped">
         <colgroup>
- 			<col style="width:45%"/>
-  		</colgroup>
+            <col style="width:45%" />
+        </colgroup>
         <tbody>
             <tr>
                 <td>{LANG.name}</td>
@@ -84,7 +86,8 @@
             <!-- BEGIN: group_manage -->
             <tr>
                 <td>{LANG.group_manage_count}</td>
-                <td>{USER.group_manage} <a href="{URL_GROUPS}" title="{LANG.group_manage_list}">({LANG.group_manage_list})</a></td>
+                <td>{USER.group_manage} <a href="{URL_GROUPS}"
+                        title="{LANG.group_manage_list}">({LANG.group_manage_list})</a></td>
             </tr>
             <!-- END: group_manage -->
             <tr>
@@ -104,6 +107,8 @@
 </div>
 
 <ul class="nav navbar-nav">
-    <!-- BEGIN: navbar --><li><a href="{NAVBAR.href}"><em class="fa fa-caret-right margin-right-sm"></em>{NAVBAR.title}</a></li><!-- END: navbar -->
+    <!-- BEGIN: navbar -->
+    <li><a href="{NAVBAR.href}"><em class="fa fa-caret-right margin-right-sm"></em>{NAVBAR.title}</a></li>
+    <!-- END: navbar -->
 </ul>
 <!-- END: main -->
