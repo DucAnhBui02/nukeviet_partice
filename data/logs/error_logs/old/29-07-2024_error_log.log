@@ -1,0 +1,12 @@
+[Mon, 29 Jul 2024 20:16:03 +0700] [localhost] [::1] [Warning(2): Undefined array key "groups"] [FILE: /modules/parking-manage/admin.functions.php] [LINE: 51] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+#2  LINE: 29    FILE: /modules/parking-manage/admin/vehicle_type.php
+
+[Mon, 29 Jul 2024 20:17:51 +0700] [localhost] [::1] [Error(1): Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qlhocvien.nv4_vi_news_type' doesn't exist in C:\xampp\htdocs\nukeviet\vendor\vinades\nukeviet\Core\Database.php:544
+Stack trace:
+#0 C:\xampp\htdocs\nukeviet\vendor\vinades\nukeviet\Core\Database.php(544): PDO->query('SELECT * FROM n...', NULL)
+#1 C:\xampp\htdocs\nukeviet\modules\news\admin.functions.php(484): NukeViet\Core\Database->query('SELECT * FROM n...')
+#2 C:\xampp\htdocs\nukeviet\modules\news\admin\groups.php(106): nv_show_block_cat_list()
+#3 C:\xampp\htdocs\nukeviet\admin\index.php(182): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 544]

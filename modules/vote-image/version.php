@@ -19,11 +19,11 @@ $module_version = [
     'submenu' => 'main,detail,search',
     'is_sysmod' => 0,
     'virtual' => 1,
-    'version' => '4.3.03',
-    'date' => 'Sat, 31 Oct 2020 02:20:33 GMT',
-    'author' => 'VINADES.,JSC (contact@vinades.vn)',
+    'version' => '4.5.05',
+    'date' => 'Friday, March 22, 2024 4:00:00 PM GMT+07:00',
+    'author' => 'VINADES.,JSC <contact@vinades.vn>',
+    'note' => '',
     'uploads_dir' => [
-        
+        $module_upload
     ],
-    'note' => ''
 ];

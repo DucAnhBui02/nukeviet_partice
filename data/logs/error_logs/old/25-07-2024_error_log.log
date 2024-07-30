@@ -1,0 +1,41 @@
+[Thu, 25 Jul 2024 08:13:06 +0700] [localhost] [::1] [Warning(2): Undefined array key ""] [FILE: /modules/parking-manage/admin/vehicle_type.php] [LINE: 16] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+
+[Thu, 25 Jul 2024 14:57:21 +0700] [localhost] [::1] [Error(1): Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qlhocvien.nv4_vi_parking_manage_block_cat' doesn't exist in C:\xampp\htdocs\nukeviet\vendor\vinades\nukeviet\Core\Database.php:544
+Stack trace:
+#0 C:\xampp\htdocs\nukeviet\vendor\vinades\nukeviet\Core\Database.php(544): PDO->query('SELECT * FROM n...', NULL)
+#1 C:\xampp\htdocs\nukeviet\modules\parking-manage\admin.functions.php(28): NukeViet\Core\Database->query('SELECT * FROM n...')
+#2 C:\xampp\htdocs\nukeviet\modules\parking-manage\admin\vehicle_type.php(29): nv_show_block_vehicle_list()
+#3 C:\xampp\htdocs\nukeviet\admin\index.php(182): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 544]
+[Thu, 25 Jul 2024 21:00:53 +0700] [localhost] [::1] [Warning(2): file_get_contents(C:/xampp/htdocs/nukeviet/themes/admin_default/modules/parking-manage\vehicle_typ.tpl): Failed to open stream: No such file or directory] [FILE: /includes/xtemplate.class.php] [LINE: 1333] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+#2  LINE: 18    FILE: /modules/parking-manage/admin/vehicle_type.php
+#3  LINE: 395   FILE: /includes/xtemplate.class.php
+#4  LINE: 506   FILE: /includes/xtemplate.class.php
+#5  LINE: 537   FILE: /includes/xtemplate.class.php
+#6  LINE: 1365  FILE: /includes/xtemplate.class.php
+#7  LINE: 1333  FILE: /includes/xtemplate.class.php
+
+[Thu, 25 Jul 2024 21:33:34 +0700] [localhost] [::1] [Error(1): Uncaught Error: Call to undefined function nv_show_block_vehicle_list() in C:\xampp\htdocs\nukeviet\modules\parking-manage\admin\vehicle_type.php:29
+Stack trace:
+#0 C:\xampp\htdocs\nukeviet\admin\index.php(182): require()
+#1 {main}
+  thrown] [FILE: /modules/parking-manage/admin/vehicle_type.php] [LINE: 29]
+[Thu, 25 Jul 2024 22:26:32 +0700] [localhost] [::1] [Warning(2): Undefined variable $num] [FILE: /modules/parking-manage/admin.functions.php] [LINE: 32] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+#2  LINE: 29    FILE: /modules/parking-manage/admin/vehicle_type.php
+
+[Thu, 25 Jul 2024 22:27:04 +0700] [localhost] [::1] [Warning(2): Undefined array key "bid"] [FILE: /modules/parking-manage/admin.functions.php] [LINE: 44] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+#2  LINE: 29    FILE: /modules/parking-manage/admin/vehicle_type.php
+
+[Thu, 25 Jul 2024 22:44:27 +0700] [localhost] [::1] [Warning(2): Array to string conversion] [FILE: /modules/news/admin.functions.php] [LINE: 485] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+#2  LINE: 106   FILE: /modules/news/admin/groups.php
+
+[Thu, 25 Jul 2024 23:07:59 +0700] [localhost] [::1] [Warning(2): Undefined array key "groups"] [FILE: /modules/parking-manage/admin.functions.php] [LINE: 51] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+#2  LINE: 29    FILE: /modules/parking-manage/admin/vehicle_type.php
+

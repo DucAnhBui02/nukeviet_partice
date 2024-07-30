@@ -1,0 +1,16 @@
+[Tue, 23 Jul 2024 15:59:27 +0700] [localhost] [::1] [Error(1): Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qlhocvien.nv4_vi_parking_manager_manage' doesn't exist in C:\xampp\htdocs\nukeviet\vendor\vinades\nukeviet\Core\Database.php:544
+Stack trace:
+#0 C:\xampp\htdocs\nukeviet\vendor\vinades\nukeviet\Core\Database.php(544): PDO->query('SELECT * FROM n...', NULL)
+#1 C:\xampp\htdocs\nukeviet\modules\parking-manager\admin\main.php(23): NukeViet\Core\Database->query('SELECT * FROM n...')
+#2 C:\xampp\htdocs\nukeviet\admin\index.php(182): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 544]
+[Tue, 23 Jul 2024 16:10:26 +0700] [localhost] [::1] [Warning(2): file_get_contents(C:/xampp/htdocs/nukeviet/themes//modules/parking-manage\main.tpl): Failed to open stream: No such file or directory] [FILE: /includes/xtemplate.class.php] [LINE: 1333] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+#2  LINE: 26    FILE: /modules/parking-manage/admin/main.php
+#3  LINE: 395   FILE: /includes/xtemplate.class.php
+#4  LINE: 506   FILE: /includes/xtemplate.class.php
+#5  LINE: 537   FILE: /includes/xtemplate.class.php
+#6  LINE: 1365  FILE: /includes/xtemplate.class.php
+#7  LINE: 1333  FILE: /includes/xtemplate.class.php
+
